@@ -14,6 +14,7 @@ Based on the following papers and tools:
 Script created for crawling JCR endpoints (not filtered by the dispatchers) searching at the same time for potentially sensitive information such as passwords and secrets. The script also search for usernames and emails addresses that could be used in SE attacks.
 
 Note: This script was build for Python3.
+
 Note2: Search patterns used needs to be improved to obtain better results and rule out false positives
 
 ### Usage
